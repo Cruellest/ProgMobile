@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@color/white">
+    android:padding="16dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -30,15 +29,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_to_the_vocaloid_world"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/vocaloid_is_a_voice_synthesis_software_supported_by_yamaha_corporation_it_uses_synthesis_technology_with_vocals_specially_recorded_by_voice_actors_or_singers_creating_world_renowned_voicebanks"
                 android:textSize="16sp"
-                android:textColor="@color/gray"
                 android:layout_marginTop="8dp" />
 
         </LinearLayout>

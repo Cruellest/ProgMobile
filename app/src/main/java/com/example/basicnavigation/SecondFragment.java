@@ -38,11 +38,10 @@ public class SecondFragment extends Fragment {
 
         // Set up the GridView
         int[] lista = new int[]{
-                R.drawable.sample_0, R.drawable.sample_1, R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5, R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_8, R.drawable.sample_9, R.drawable.sample_10, R.drawable.sample_11,
-                R.drawable.sample_12, R.drawable.sample_13, R.drawable.sample_14, R.drawable.sample_15,
-                R.drawable.sample_16, R.drawable.sample_17
+                R.drawable.akitaneru, R.drawable.hatsunemiku, R.drawable.kagaminelen, R.drawable.kagaminerin,
+                R.drawable.kamuigakupo, R.drawable.kasaneteto, R.drawable.maika, R.drawable.megumimegpoid,
+                R.drawable.megurineluka, R.drawable.momomomone, R.drawable.sakinemeiko, R.drawable.seeu,
+                R.drawable.shionakaito, R.drawable.shionkaito, R.drawable.utaneuta, R.drawable.yowanehaku
         };
 
         binding.grid.setAdapter(new Adaptador(getContext(), lista));
@@ -54,26 +53,25 @@ public class SecondFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 String mensagem;
                 switch (position) {
-                    case 1: mensagem = "Beagle"; break;
-                    case 2: mensagem = "Bulldog"; break;
-                    case 3: mensagem = "Poodle"; break;
-                    case 4: mensagem = "Labrador"; break;
-                    case 5: mensagem = "Rottweiler"; break;
-                    case 6: mensagem = "Pastor Alemão"; break;
-                    case 7: mensagem = "Cachorro1"; break;
-                    case 8: mensagem = "Yorkshire"; break;
-                    case 9: mensagem = "Yorkshire"; break;
-                    case 10: mensagem = "Yorkshir"; break;
-                    case 11: mensagem = "Yorkshire"; break;
-                    case 12: mensagem = "Yorkshire"; break;
-                    case 13: mensagem = "Yorkshire"; break;
-                    case 14: mensagem = "Yorkshire"; break;
-                    case 15: mensagem = "Yorkshire"; break;
-                    case 16: mensagem = "Yorkshire"; break;
-                    case 17: mensagem = "Yorkshire"; break;
-                    default: mensagem = "Outros"; break;
+                    case 1: mensagem = "Akita Neru"; break;
+                    case 2: mensagem = "Hatsune Miku"; break;
+                    case 3: mensagem = "Kagamine Len"; break;
+                    case 4: mensagem = "Kagamine Rin"; break;
+                    case 5: mensagem = "Kamui Gakupo"; break;
+                    case 6: mensagem = "Kasane Teto"; break;
+                    case 7: mensagem = "Maika"; break;
+                    case 8: mensagem = "Megumi Megpoid"; break;
+                    case 9: mensagem = "Megurine Luka"; break;
+                    case 10: mensagem = "Momo Momone"; break;
+                    case 11: mensagem = "Sakine Meiko"; break;
+                    case 12: mensagem = "SeeU"; break;
+                    case 13: mensagem = "Shion Akaito"; break;
+                    case 14: mensagem = "Shion Kaito"; break;
+                    case 15: mensagem = "Utane Uta [Defuko]"; break;
+                    case 16: mensagem = "Yowane Haku"; break;
+                    default: mensagem = ""; break;
                 }
-                binding.raca.setText("Raça: " + mensagem);
+                binding.raca.setText("Voicebank: " + mensagem);
             }
         });
     }

@@ -17,7 +17,7 @@
             android:id="@+id/raca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Raça"
+            android:text="VOICEBANKS"
             android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,11 @@
             android:id="@+id/button_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/previous"
+            android:backgroundTint="@color/purple_500"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            app:cornerRadius="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

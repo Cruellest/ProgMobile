@@ -26,19 +26,17 @@
             android:padding="24dp">
 
             <TextView
-                android:id="@+id/titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to the VOCALOID World!"
+                android:text="@string/welcome_to_the_vocaloid_world"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/subtitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vocaloid is a voice synthesis software, supported by Yamaha Corporation. It uses synthesis technology with vocals specially recorded by voice actors or singers, creating world-renowned VOICEBANKS."
+                android:text="@string/vocaloid_is_a_voice_synthesis_software_supported_by_yamaha_corporation_it_uses_synthesis_technology_with_vocals_specially_recorded_by_voice_actors_or_singers_creating_world_renowned_voicebanks"
                 android:textSize="16sp"
                 android:textColor="@color/gray"
                 android:layout_marginTop="8dp" />
@@ -50,7 +48,7 @@
         android:id="@+id/button_first"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Meet some VOICEBANKS"
+        android:text="@string/meet_some_voicebanks"
         android:backgroundTint="@color/purple_500"
         android:textColor="@android:color/white"
         android:layout_marginTop="16dp"
@@ -65,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_500"
-        android:text="Songs"
+        android:text="@string/songs"
         android:textColor="@android:color/white"
         android:layout_marginTop="16dp"
         app:cornerRadius="12dp"

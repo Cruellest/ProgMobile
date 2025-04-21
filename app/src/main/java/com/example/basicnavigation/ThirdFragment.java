@@ -11,11 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.basicnavigation.databinding.FragmentThirdBinding;
+
+import java.util.Objects;
 
 /**
  * create an instance of this fragment.
@@ -44,7 +45,7 @@ public class ThirdFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentThirdBinding.inflate(inflater, container, false);
         return binding.getRoot();
@@ -57,7 +58,7 @@ public class ThirdFragment extends Fragment {
                 NavHostFragment.findNavController(ThirdFragment.this)
                         .navigate(R.id.action_ThirdFragment_to_FirstFragment));
 
-        ArrayAdapter adapter=ArrayAdapter.createFromResource(getContext(),
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(Objects.requireNonNull(getContext()),
                 R.array.sons, android.R.layout.simple_spinner_item);
         binding.spinner2.setAdapter(adapter);
         binding.spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -148,12 +149,7 @@ public class ThirdFragment extends Fragment {
                         break;
                 }
                 if (mediaPlayer != null) {
-                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        @Override
-                        public void onCompletion(MediaPlayer mp) {
-                            mediaPlayer.release();
-                        }
-                    });
+                    mediaPlayer.setOnCompletionListener(mp -> mediaPlayer.release());
                 }
 
             }
@@ -162,6 +158,6 @@ public class ThirdFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
-        });;
+        });
     }
 }

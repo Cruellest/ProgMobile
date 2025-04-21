@@ -4,12 +4,11 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 
 public class Adaptador extends BaseAdapter {
-    private Context context;
-    private int[] lista;
+    private final Context context;
+    private final int[] lista;
 
     public Adaptador(Context context, int[] lista) {
         this.context = context;

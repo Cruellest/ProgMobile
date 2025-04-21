@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="com.example.basicnavigation.ThirdFragment"
-        android:label="Third Fragment"
+        android:label="@string/third_fragment_label"
         tools:layout="@layout/fragment_third">
 
         <action

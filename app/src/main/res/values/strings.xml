@@ -1,20 +1,33 @@
 <resources>
-    <string name="app_name">Basic Navigation</string>
+    <string name="app_name">VocaInfo</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Home</string>
+    <string name="second_fragment_label">Voice Banks</string>
+    <string name="third_fragment_label">Songs</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string-array name="sons">
         <item>Escolha um Som:</item>
-        <item>PlaceHolder1</item>
-        <item>Placeholder2</item>
-        <item>PlaceHolder3</item>
-        <item>PlaceHolder4</item>
-        <item>PlaceHolder5</item>
+        <item>Akita Neru - Ghost Rule</item>
+        <item>Hatsune Miku - World is Mine</item>
+        <item>Kagamine Len - Butterfly on Your Right Shoulder</item>
+        <item>Kagamine Rin - Meltdown</item>
+        <item>Kamui Gakupo - Ghost Rule</item>
+        <item>Kasane Teto - Senbonzakura</item>
+        <item>Maika - The Things I Deserve</item>
+        <item>Megumi Megpoid (GUMI)</item>
+        <item>Megurine Luka - Night Fever</item>
+        <item>Momone Momo - Teo</item>
+        <item>Sakine Meiko - Honey</item>
+        <item>SeeU - Demo Song</item>
+        <item>Shion Kaito - Bad Apple</item>
+        <item>Shion Kaito - Rosary Pale</item>
+        <item>Utane Uta - Cannot Even Dream</item>
+        <item>Yowane Haku - Ghost Rule</item>
     </string-array>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
